@@ -34,8 +34,8 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, OtherScreen.class);
-                intent.putExtra("name"iphoneList[i]);
-                intent.putExtra("image", iphoneimg[i])
+                intent.putExtra("name",iphoneList[position]);
+                intent.putExtra("image", iphoneimg[position]);
                 startActivity(intent);
             }
         });
