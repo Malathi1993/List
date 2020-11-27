@@ -6,19 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".OtherScreen">
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="iphone"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:text="iphone"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="50dp"
-        android:background="@drawable/iphone6"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <ImageButton
+        android:id="@+id/image"
+        android:layout_width="408dp"
+        android:layout_height="427dp"
+        android:src="@drawable/iphone1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
 </androidx.constraintlayout.widget.ConstraintLayout>

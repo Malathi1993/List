@@ -12,20 +12,20 @@ import java.util.zip.Inflater;
 
 public class CustomAdapter extends BaseAdapter {
     Context context;
-    String countryList[];
-    int flags[];
+    String iphoneList[];
+    int iphoneimg[];
     LayoutInflater inflter;
 
     public CustomAdapter(Context applicationContext, String[] countryList, int[] flags) {
         this.context = context;
-        this.countryList = countryList;
-        this.flags = flags;
+        this.iphoneList = countryList;
+        this.iphoneimg = flags;
         inflter = (LayoutInflater.from(applicationContext));
     }
 
     @Override
     public int getCount() {
-        return countryList.length;
+        return iphoneList.length;
     }
 
     @Override
@@ -43,8 +43,8 @@ public class CustomAdapter extends BaseAdapter {
         view = inflter.inflate(R.layout.activity_listview, null);
         TextView country = (TextView) view.findViewById(R.id.textView);
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
-        country.setText(countryList[i]);
-        icon.setImageResource(flags[i]);
+        country.setText(iphoneList[i]);
+        icon.setImageResource(iphoneimg[i]);
         return view;
     }
 }
